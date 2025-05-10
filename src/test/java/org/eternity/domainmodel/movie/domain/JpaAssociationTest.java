@@ -14,7 +14,7 @@ public class JpaAssociationTest {
 	private EntityManager em;
 
 	@Test
-	public void persist_and_update() {
+	public void persist() {
 		Movie movie = new Movie("한산", 120, Money.wons(10000));
 		movie.addScreening(new Screening(1, LocalDateTime.of(2024, 12, 9, 9, 0)));
 		movie.addScreening(new Screening(2, LocalDateTime.of(2024, 12, 9, 11, 0)));
